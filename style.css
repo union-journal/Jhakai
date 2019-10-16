@@ -1,0 +1,109 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  /* overflow-y: hidden; */
+}
+
+#bg {
+  margin: 0px;
+  padding: 0px;
+  max-height: 100vh;
+  height:100vh;
+  float: left;
+
+}
+
+#bg2 {
+  position: relative;
+  margin: 0px;
+  max-height: 100vh;
+  height:100vh;
+
+  /* padding-left: 600%; */
+  display: table;
+}
+
+#title {
+  position: absolute;
+  height: 45px;
+  padding-top: 20%;
+  padding-left: 50%;
+  z-index: 998;
+}
+
+#flowers {
+  height:713px;
+  width: 471px;
+  position: absolute;
+  font-size: 14px;
+  z-index: 997;
+  font-family: Georgia,Times,Times New Roman,serif;
+  padding-top: 7%;
+  padding-left: 110%;
+}
+
+
+/* for the info menu */
+.top {
+  position: fixed;
+  width:50%;
+}
+
+.info {
+  position: fixed;
+  font-size: 26px;
+  color: white;
+  z-index: 999;
+  top: 10px;
+  right: 10px;
+	padding:0px 0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#tag-menu {
+	display:none;
+}
+
+
+#tag-menu:checked ~ div.drawer {
+ animation: slide-out 0.5s ease;
+ animation-fill-mode: forwards;
+}
+
+/* linear-gradient(to right, , rgba(255,0,0,0)); */
+.drawer {
+  background: radial-gradient(farthest-corner at 60% 55%, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.75),rgba(255,0,0,0));
+	position:fixed;
+  top: 0;
+	right:-500px;
+	height:100%;
+	z-index:100;
+	width:280px;
+	animation: slide-in 0.5s ease;
+	animation-fill-mode: forwards;
+  margin-top: 0px;
+  overflow-y: scroll;
+  /* eventually make scroll within a div */
+}
+
+.text {
+  text-align: justify;
+  margin-top: 200px;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+@keyframes slide-in {
+ from {right: 0px;}
+ to {right: -280px;}
+}
+
+@keyframes slide-out {
+ from {right: -280px;}
+ to {right: 0px;}
+}

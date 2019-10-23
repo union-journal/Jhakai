@@ -98,6 +98,28 @@ body::-webkit-scrollbar {
 
 }
 
+#chair_title {
+  z-index: 997;
+  position: absolute;
+  width:400px;
+  font-size: 17px;
+  font-family: Georgia;
+  font-style: italic;
+  top: 15%;
+  left: 470%;
+}
+
+#chair_text {
+  z-index: 997;
+  position: absolute;
+  width:400px;
+  height: 541px;
+  font-size: 14px;
+  font-family: Georgia;
+  top: 21%;
+  left: 470%
+}
+
 /* last text width:346, height: 541 */
 
 

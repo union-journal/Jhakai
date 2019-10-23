@@ -81,11 +81,11 @@ body {
 	right:-500px;
 	height:100%;
 	z-index:100;
-	width:280px;
+	width:450px;
 	animation: slide-in 0.5s ease;
 	animation-fill-mode: forwards;
   margin-top: 0px;
-  overflow-y: scroll;
+  overflow-y: hidden;
   /* eventually make scroll within a div */
 }
 
@@ -96,14 +96,16 @@ body {
   margin-right: 25px;
   margin-bottom: 30px;
   font-size: 15px;
+  overflow-y: auto;
+  height: 75vh;
 }
 
 @keyframes slide-in {
  from {right: 0px;}
- to {right: -280px;}
+ to {right: -450px;}
 }
 
 @keyframes slide-out {
- from {right: -280px;}
+ from {right: -450px;}
  to {right: 0px;}
 }

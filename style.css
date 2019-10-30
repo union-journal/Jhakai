@@ -1,12 +1,14 @@
 body {
   margin: 0px;
-  padding: 0px;
+  padding: 0;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   top: 0px;
-  bottom: 0px;
-  height: 100%;
   overflow-y: hidden;
   scrollbar-width: none;
   -ms-overflow-style: none;
+  padding-bottom: 0px;
 }
 
 body::-webkit-scrollbar {
@@ -15,10 +17,12 @@ body::-webkit-scrollbar {
 
 
 #bg {
+  top: 5px;
   margin: 0px;
-  padding: 0px;
+  padding: 0;
   max-height: 100vh;
   height:100vh;
+  min-height: 100vh;
 }
 
 
@@ -47,14 +51,14 @@ body::-webkit-scrollbar {
   position: absolute;
   z-index: 997;
   padding-top: 20%;
-  padding-left: 210%;
+  padding-left: 260%;
   overflow-y: hidden;
   font-size: 14px;
 }
 
 #poem_title {
   padding-top: 17%;
-  padding-left: 210%;
+  padding-left: 260%;
   z-index: 997;
   position: absolute;
   width:400px;
@@ -71,17 +75,17 @@ body::-webkit-scrollbar {
   font-size: 14px;
   font-family: Georgia;
   overflow-y: auto;
+  color: rgba(0, 0, 0, 1);
 }
 
 .img1 {
   position: absolute;
   background: white;
   padding: 0px;
-  height: 300px;
-  width: 500px;
+  height:100vh;
+  width: 100%;
   z-index: 997;
-  top: 30px;
-  left: 300%;
+  left: 350%;
   bottom:0;
 }
 
@@ -89,11 +93,10 @@ body::-webkit-scrollbar {
   position: absolute;
   background: white;
   padding: 0px;
-  height: 300px;
-  width: 500px;
+  height:100vh;
+  width: 100%;
   z-index: 997;
-  top: 400px;
-  left: 375%;
+  left: 550%;
   bottom:0;
 
 }
@@ -106,7 +109,7 @@ body::-webkit-scrollbar {
   font-family: Georgia;
   font-style: italic;
   top: 15%;
-  left: 470%;
+  left: 700%;
 }
 
 #chair_text {
@@ -117,7 +120,7 @@ body::-webkit-scrollbar {
   font-size: 14px;
   font-family: Georgia;
   top: 21%;
-  left: 470%
+  left: 700%
 }
 
 /* last text width:346, height: 541 */

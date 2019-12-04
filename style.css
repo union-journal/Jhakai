@@ -23,13 +23,13 @@ body::-webkit-scrollbar-thumb {
   background: #fff9e0;
 }
 
-#poem_title::-webkit-scrollbar {
+#poem_text::-webkit-scrollbar {
   width: 5px;
   height: 8px;
   background-color: rgba(0,0,0,0);; /* or add it to the track */
 }
 
-#poem_title::-webkit-scrollbar-thumb {
+#poem_text::-webkit-scrollbar-thumb {
   background: #fff9e0;
 }
 
@@ -157,7 +157,7 @@ p {
   font-family: Georgia;
   font-style: italic;
   top: 15%;
-  left: 700%;
+  left: 750%;
 }
 
 #chair_text {
@@ -168,7 +168,7 @@ p {
   font-size: 14px;
   font-family: Georgia;
   top: 21%;
-  left: 700%
+  left: 750%
 }
 
 /* last text width:346, height: 541 */

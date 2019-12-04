@@ -15,14 +15,30 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+p {
+  color: #fff9e0;
+}
 
-#bg {
+
+.big {
   top: 5px;
   margin: 0px;
   padding: 0;
+  display: flex;
+}
+
+#bgl {
   max-height: 100vh;
   height:100vh;
   min-height: 100vh;
+  flex-direction: row;
+}
+
+#bgr {
+  max-height: 100vh;
+  height:100vh;
+  min-height: 100vh;
+  flex-direction: row;
 }
 
 
@@ -75,7 +91,7 @@ body::-webkit-scrollbar {
   font-size: 14px;
   font-family: Georgia;
   overflow-y: auto;
-  color: rgba(0, 0, 0, 1);
+  color: #fff9e0;
 }
 
 .img1 {
@@ -162,7 +178,7 @@ body::-webkit-scrollbar {
   top: 0;
 	right:-500px;
 	height:100%;
-	z-index:100;
+	z-index:999;
 	width:450px;
 	animation: slide-in 0.5s ease;
 	animation-fill-mode: forwards;

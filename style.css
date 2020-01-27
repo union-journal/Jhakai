@@ -59,20 +59,6 @@ p {
   flex-direction: row;
 }
 
-#bg3 {
-  max-height: 100vh;
-  height:100vh;
-  min-height: 100vh;
-  flex-direction: row;
-}
-
-#bg4 {
-  max-height: 100vh;
-  height:100vh;
-  min-height: 100vh;
-  flex-direction: row;
-}
-
 #bg11 {
   max-height: 100vh;
   height:100vh;
@@ -81,20 +67,6 @@ p {
 }
 
 #bg22 {
-  max-height: 100vh;
-  height:100vh;
-  min-height: 100vh;
-  flex-direction: row;
-}
-
-#bg33 {
-  max-height: 100vh;
-  height:100vh;
-  min-height: 100vh;
-  flex-direction: row;
-}
-
-#bg44 {
   max-height: 100vh;
   height:100vh;
   min-height: 100vh;

@@ -33,6 +33,77 @@ body::-webkit-scrollbar-thumb {
   background: #fff9e0;
 }
 
+/* for the info menu */
+.top {
+  position: fixed;
+  width:50%;
+  z-index: 999;
+}
+
+/* #question {
+  height: 25px;
+} */
+
+.info {
+  position: fixed;
+  font-size: 26px;
+  color: white;
+  z-index: 999;
+  top: 10px;
+  right: 10px;
+	padding:0px 0px;
+	margin-left:0px;
+	margin-top:0px;
+	margin-bottom:0px;
+}
+
+#tag-menu {
+	display:none;
+}
+
+
+#tag-menu:checked ~ div.drawer {
+ animation: slide-out 0.5s ease;
+ animation-fill-mode: forwards;
+}
+
+/* linear-gradient(to right, , rgba(255,0,0,0)); */
+.drawer {
+  background: radial-gradient(farthest-corner at 60% 55%, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.75),rgba(255,0,0,0));
+	position:fixed;
+  top: 0;
+	right:-500px;
+	height:100%;
+	z-index:100;
+	width:450px;
+	animation: slide-in 0.5s ease;
+	animation-fill-mode: forwards;
+  margin-top: 0px;
+  /* eventually make scroll within a div */
+}
+
+p {
+  text-align: justify;
+  margin-top: 35px;
+  margin-left: 35px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  font-size: 15px;
+  overflow-y: auto;
+  height: 80%;
+}
+
+@keyframes slide-in {
+ from {right: 0px;}
+ to {right: -450px;}
+}
+
+@keyframes slide-out {
+ from {right: -450px;}
+ to {right: 0px;}
+}
+
+
 p {
   color: #fff9e0;
 }
@@ -174,70 +245,3 @@ p {
 }
 
 /* last text width:346, height: 541 */
-
-
-/* for the info menu */
-.top {
-  position: fixed;
-  width:50%;
-}
-
-.info {
-  position: fixed;
-  font-size: 26px;
-  color: #fff9e0;
-  z-index: 999;
-  top: 10px;
-  right: 10px;
-	padding:0px 0px;
-	margin-left:0px;
-	margin-top:0px;
-	margin-bottom:0px;
-}
-
-#tag-menu {
-	display:none;
-}
-
-
-#tag-menu:checked ~ div.drawer {
- animation: slide-out 0.5s ease;
- animation-fill-mode: forwards;
-}
-
-/* linear-gradient(to right, , rgba(255,0,0,0)); */
-.drawer {
-  background: radial-gradient(farthest-corner at 60% 55%, rgba(255, 255, 255, 1),rgba(255, 255, 255, 0.75),rgba(255,0,0,0));
-	position:fixed;
-  top: 0;
-	right:-500px;
-	height:100%;
-	z-index:999;
-	width:450px;
-	animation: slide-in 0.5s ease;
-	animation-fill-mode: forwards;
-  margin-top: 0px;
-  overflow-y: hidden;
-  /* eventually make scroll within a div */
-}
-
-.text {
-  text-align: justify;
-  margin-top: 200px;
-  margin-left: 25px;
-  margin-right: 25px;
-  margin-bottom: 30px;
-  font-size: 15px;
-  overflow-y: auto;
-  height: 75vh;
-}
-
-@keyframes slide-in {
- from {right: 0px;}
- to {right: -450px;}
-}
-
-@keyframes slide-out {
- from {right: -450px;}
- to {right: 0px;}
-}

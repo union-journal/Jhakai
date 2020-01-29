@@ -85,7 +85,7 @@ body::-webkit-scrollbar-thumb {
 	right:-500px;
 	height:100%;
 	z-index:100;
-	width:450px;
+	width:500px;
 	animation: slide-in 0.5s ease;
 	animation-fill-mode: forwards;
   margin-top: 0px;
@@ -100,18 +100,25 @@ body::-webkit-scrollbar-thumb {
   margin-bottom: 35px;
   color: #1B0D00;
   font: Georgia;
-  font-size: 15px;
   overflow-y: auto;
   height: 90%;
 }
 
+#bar_title {
+  font-size: 20px;
+}
+
+#bar_poem {
+  font-size: 15px;
+}
+
 @keyframes slide-in {
  from {right: 0px;}
- to {right: -450px;}
+ to {right: -500px;}
 }
 
 @keyframes slide-out {
- from {right: -450px;}
+ from {right: -500px;}
  to {right: 0px;}
 }
 
@@ -142,6 +149,20 @@ p {
   flex-direction: row;
 }
 
+#bg3 {
+  max-height: 100vh;
+  height:100vh;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+#bg4 {
+  max-height: 100vh;
+  height:100vh;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
 #bg11 {
   max-height: 100vh;
   height:100vh;
@@ -150,6 +171,20 @@ p {
 }
 
 #bg22 {
+  max-height: 100vh;
+  height:100vh;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+#bg33 {
+  max-height: 100vh;
+  height:100vh;
+  min-height: 100vh;
+  flex-direction: row;
+}
+
+#bg44 {
   max-height: 100vh;
   height:100vh;
   min-height: 100vh;

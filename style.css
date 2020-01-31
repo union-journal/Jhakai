@@ -40,7 +40,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 #whole::-webkit-scrollbar-thumb {
-  background: ##1A0C01;
+  background: #1A0C01;
 }
 
 /* for the info menu */
@@ -98,10 +98,14 @@ body::-webkit-scrollbar-thumb {
   margin-left: 35px;
   margin-right: 35px;
   margin-bottom: 35px;
-  color: #1A0C01;
+  color: #1B0D00;
   font: Georgia;
   overflow-y: auto;
   height: 90%;
+}
+
+#bar_name {
+  font-size: 30px;
 }
 
 #bar_title {
@@ -123,9 +127,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-p {
+/* p {
   color: #fff9e0;
-}
+} */
 
 
 .big {
@@ -225,6 +229,7 @@ p {
   font-family: Georgia;
   top: 21%;
   padding-left: 190%;
+  color: #fff9e0;
 }
 
 #bike {
@@ -245,6 +250,7 @@ p {
   padding-left: 440%;
   overflow-y: hidden;
   font-size: 14px;
+  color: #fff9e0;
 }
 
 #poem_title {
@@ -256,6 +262,7 @@ p {
   font-size: 17px;
   font-family: Georgia;
   font-style: italic;
+  color: #fff9e0;
 }
 
 #poem_text {
@@ -296,6 +303,7 @@ p {
   z-index: 997;
   font-family: Georgia;
   padding-top: 7%;
+  color: #fff9e0;
 }
 
 /* last text width:346, height: 541 */
